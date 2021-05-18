@@ -5,15 +5,24 @@ const sleep = util.promisify(setTimeout);
 module.exports = {
 
   async taskOne () {
-    throw Error('SOME PROBLEM');
-       await sleep(4000);
-           return 'ONE VALUE';
-           
+    try {
+      throw Error('SOME PROBLEM');
+      await sleep(3000);
+      return 'ONE VALUE';
+    }
+    catch (e) {
+      console.log(e);
+    }
   },
 
   async taskTwo () {
-    await sleep(2000);
-    return 'TWO VALUE';
+    try {
+      await sleep(2000);
+      return 'TWO VALUE';
+    }
+    catch (e) {
+      console.log(e);
+    }
   }
 
-};
+}
