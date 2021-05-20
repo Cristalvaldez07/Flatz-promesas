@@ -6,7 +6,7 @@
 ### La async palabra clave antes de una función tiene dos efectos:
 
 * Hace que siempre devuelva una promesa.
-Permite awaitser utilizado en él.
+Permite await ser utilizado en él.
 * La await palabra clave antes de una promesa hace que JavaScript espere hasta que esa promesa se establezca y luego:
-* Si es un error, se genera la excepción, igual que si throw errorse llamara en ese mismo lugar.
-* De lo contrario, devuelve el resultado.
+- Si es un error, se genera la excepción, igual que si throw error se llamara en ese mismo lugar.
+- De lo contrario, devuelve el resultado.
